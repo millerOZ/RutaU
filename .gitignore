@@ -1,0 +1,17 @@
+# Ignorar archivos de configuración
+node_modules/
+*.log
+*.json
+*.config.js
+*.env
+angular/
+# Ignorar archivos compilados y generados
+/platforms/
+/plugins/
+/www/
+
+# Ignorar archivos de dependencias
+*.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
