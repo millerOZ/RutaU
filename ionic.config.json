@@ -1,0 +1,7 @@
+{
+  "name": "RutaU",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
