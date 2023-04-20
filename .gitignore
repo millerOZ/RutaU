@@ -4,7 +4,7 @@ node_modules/
 *.json
 *.config.js
 *.env
-angular/
+.angular/
 # Ignorar archivos compilados y generados
 /platforms/
 /plugins/
