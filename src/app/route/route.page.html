@@ -1,0 +1,187 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>TransportaU</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar> </ion-toolbar>
+  </ion-header>
+
+  <swiper-container>
+    <swiper-slide>
+      Slide 1<img src="assets/img/frame1.png" alt=""
+    /></swiper-slide>
+    <swiper-slide
+      >Slide 2 <img src="assets/img/frame1.png" alt=""
+    /></swiper-slide>
+    <swiper-slide
+      >Slide 3<img src="assets/img/frame1.png" alt=""
+    /></swiper-slide>
+  </swiper-container>
+
+  <!-- carousel -->
+
+  <ion-title size="large">Rutas</ion-title>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img
+              class="rounded-button"
+              alt="Silhouette of mountains"
+              src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
+            />
+          </ion-thumbnail>
+          <ion-grid [fixed]="true">
+            <ion-row>
+              <ion-col>
+                <ion-card-header>
+                  <ion-card-title>Miller Ossa</ion-card-title>
+                </ion-card-header>
+                <ion-label>30 min</ion-label>
+                <ion-label>Cupos de vehiculo / 1</ion-label>
+                <ion-label>Disponibles - 2</ion-label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+    <ion-button fill="clear">Conocer ruta</ion-button>
+    <ion-button fill="clear">Enviar solicitud</ion-button>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-button expand="block">Conocer todas las rutas</ion-button>
+    </ion-row>
+  </ion-grid>
+  <ion-title size="large">Universidades</ion-title>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img
+              class="rounded-button"
+              alt="Silhouette of mountains"
+              src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
+            />
+          </ion-thumbnail>
+          <ion-grid [fixed]="true">
+            <ion-row>
+              <ion-col>
+                <ion-card-header>
+                  <ion-card-title
+                    >Instituto Tecnologico Metropolitano (ITM)</ion-card-title
+                  >
+                </ion-card-header>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+    <ion-button fill="clear">Conocer mas</ion-button>
+    <ion-button fill="clear">Ver estudiantes</ion-button>
+  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-button expand="block">Conocer Universidades </ion-button>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer [translucent]="true">
+  <ion-toolbar class="custom-button">
+    <ion-button fill="clear">
+      <ion-icon slot="icon-only" name="home-outline"></ion-icon>
+      <div class="button-text">Inicio</div>
+    </ion-button>
+    <ion-button fill="clear">
+      <ion-icon slot="icon-only" name="prism-outline"></ion-icon>
+      <span> Rutas </span>
+    </ion-button>
+    <ion-button fill="clear">
+      <ion-icon slot="icon-only" name="map-outline"></ion-icon>
+      <span> Explorar </span>
+    </ion-button>
+    <ion-button fill="clear">
+      <ion-icon slot="icon-only" name="car-sport-outline"></ion-icon>
+      <span> Mis vehiculos </span>
+    </ion-button>
+    <ion-button fill="clear">
+      <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+      <span> Perfil </span>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
+
+
+<!--  -->
+
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center"> Ruta Miller Ossa </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="map"></div>
+  <div id="indicators"></div>
+  <ion-button fill="clear">
+    <div class="button-text">Enviar solicitud</div>
+  </ion-button>
+  <div id="container"></div>
+</ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar class="custom-button">
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-button fill="clear">
+          <ion-icon slot="icon-only" name="ellipse-outline"></ion-icon>
+          <span> Tu ubicacion </span>
+        </ion-button>
+        <ion-button fill="clear">
+          <ion-icon slot="icon-only"name="ellipse-outline"></ion-icon>
+          <span> Universidad </span>
+        </ion-button>
+        <ion-button fill="clear">
+          <ion-icon slot="icon-only" name="ellipse-outline"></ion-icon>
+          <span> MIller </span>
+        </ion-button>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-button fill="clear">
+          <ion-icon slot="icon-only" name="home-outline"></ion-icon>
+          <div class="button-text">Inicio</div>
+        </ion-button>
+    
+        <ion-button fill="clear">
+          <ion-icon slot="icon-only" name="prism-outline"></ion-icon>
+          <span> Rutas </span>
+        </ion-button>
+        <ion-button fill="clear">
+          <ion-icon slot="icon-only" name="map-outline"></ion-icon>
+          <span> Explorar </span>
+        </ion-button>
+        <ion-button fill="clear">
+          <ion-icon slot="icon-only" name="car-sport-outline"></ion-icon>
+          <span> Mis vehiculos </span>
+        </ion-button>
+        <ion-button fill="clear">
+          <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+          <span> Perfil </span>
+        </ion-button>
+      </ion-row>
+    </ion-grid>
+
+    
+  </ion-toolbar>
+</ion-footer>
+ -->
