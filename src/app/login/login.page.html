@@ -17,6 +17,8 @@
             <ion-label> Usuario </ion-label>
           </ion-item>
           <ion-input
+            [(ngModel)]="userForm"
+            name="userForm"
             label="usuario"
             label-placement="floating"
             fill="outline"
@@ -27,6 +29,8 @@
       <ion-row>
         <ion-col>
           <ion-input
+            [(ngModel)]="passForm"
+            name="passForm"
             label="Contraseña"
             label-placement="floating"
             fill="outline"
@@ -36,7 +40,7 @@
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-button expand="full">Ingresar</ion-button>
+          <ion-button expand="full" type="submit">Ingresar</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>

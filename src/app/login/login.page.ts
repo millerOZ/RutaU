@@ -3,19 +3,30 @@ import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { IonicModule } from "@ionic/angular";
 
+import { LoginService } from "./login.service";
+import { User } from "../models/login";
+import { HttpClientModule } from "@angular/common/http";
+
 @Component({
   selector: "app-login",
   templateUrl: "./login.page.html",
   styleUrls: ["./login.page.scss"],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule],
+  imports: [IonicModule, CommonModule, FormsModule, HttpClientModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class LoginPage implements OnInit {
-  constructor() {}
-
+  constructor(public loginService: LoginService) {}
+  userForm: any;
+  passForm: any;
   ngOnInit() {}
   login() {
-    throw new Error("Method not implemented.");
+    console.log(this.userForm);
+    console.log(this.passForm);
+    let user: User = {
+      User: this.userForm,
+      Pass: this.passForm
+    }
+    this.loginService.postLogin(user)
   }
 }
