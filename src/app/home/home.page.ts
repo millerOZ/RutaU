@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
+import { Component, OnInit } from "@angular/core";
+import { IonicModule } from "@ionic/angular";
 
 declare var google: any;
 interface Marker {
@@ -10,9 +10,9 @@ interface Marker {
   title: string;
 }
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: "app-home",
+  templateUrl: "home.page.html",
+  styleUrls: ["home.page.scss"],
   standalone: true,
   imports: [IonicModule],
 })
@@ -35,7 +35,7 @@ export class HomePage implements OnInit {
         lat: 6.245410615036414,
         lng: -75.55106273297991,
       },
-      title: 'ITM Fratermindad',
+      title: "ITM Fratermindad",
     },
   ];
   constructor() {}
@@ -44,9 +44,9 @@ export class HomePage implements OnInit {
   }
   loadMap() {
     // create a new map by passing HTMLElement
-    const mapEle: HTMLElement | null = document.getElementById('map');
+    const mapEle: HTMLElement | null = document.getElementById("map");
     const indicatorsEle: HTMLElement | null =
-      document.getElementById('indicators');
+      document.getElementById("indicators");
 
     // create map
     this.map = new google.maps.Map(mapEle, {
@@ -57,8 +57,8 @@ export class HomePage implements OnInit {
     this.directionsDisplay.setMap(this.map);
     this.directionsDisplay.setPanel(indicatorsEle);
 
-    google.maps.event.addListenerOnce(this.map, 'idle', () => {
-      mapEle ? mapEle.classList.add('show-map') : null;
+    google.maps.event.addListenerOnce(this.map, "idle", () => {
+      mapEle ? mapEle.classList.add("show-map") : null;
       this.renderMarkers();
       this.calculateRoute();
     });
@@ -89,7 +89,7 @@ export class HomePage implements OnInit {
         if (status === google.maps.DirectionsStatus.OK) {
           this.directionsDisplay.setDirections(response);
         } else {
-          alert('Could not display directions due to: ' + status);
+          alert("Could not display directions due to: " + status);
         }
       }
     );

@@ -9,7 +9,6 @@ export class LoginService {
   constructor() {}
 
   async postLogin(user: User) {
-    debugger;
     const url =
       "https://apirutau20230506111004.azurewebsites.net/api/Account/Login";
     const data = {
