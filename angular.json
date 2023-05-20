@@ -36,8 +36,8 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
-            "scripts": []
+            "styles": ["src/theme/variables.scss", "src/global.scss", "node_modules/fort-awesome/css/font-awesome.min.css"],
+            "scripts": ["node_modules/fort-awesome/fontawesome-free/js/all.min.js"]
           },
           "configurations": {
             "production": {

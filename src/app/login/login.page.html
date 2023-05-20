@@ -1,52 +1,71 @@
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">login</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
-<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-title class="title-login"> <h1>Iniciar Sesion</h1></ion-title>
+  </ion-toolbar>
   <form (ngSubmit)="login()" action="">
     <ion-grid>
       <ion-row>
-        <ion-col><h1>Iniciar Sesion</h1></ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-icon name="mail"></ion-icon>
+            <ion-input
+              [(ngModel)]="userForm"
+              name="userForm"
+              type="text"
+              placeholder="usuario"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
           <ion-item>
-            <ion-label> Usuario </ion-label>
+            <ion-icon name="lock-closed"></ion-icon>
+            <ion-input
+              [(ngModel)]="passForm"
+              name="passForm"
+              type="password"
+              placeholder="Contraseña"
+            ></ion-input>
           </ion-item>
-          <ion-input
-            [(ngModel)]="userForm"
-            name="userForm"
-            label="usuario"
-            label-placement="floating"
-            fill="outline"
-            placeholder="usuario"
-          ></ion-input
-        ></ion-col>
+        </ion-col>
       </ion-row>
       <ion-row>
-        <ion-col>
-          <ion-input
-            [(ngModel)]="passForm"
-            name="passForm"
-            label="Contraseña"
-            label-placement="floating"
-            fill="outline"
-            placeholder="Contraseña"
-          ></ion-input
-        ></ion-col>
+        <ion-col class="ion-text-center">
+          <ion-button type="submit">Ingresar</ion-button>
+        </ion-col>
       </ion-row>
       <ion-row>
+        <ion-col class="ion-text-center">
+          <ion-label>Olvidaste la contraseña ?</ion-label>
+          <span class="link-title">Recuperar</span>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
         <ion-col>
-          <ion-button
-            expand="full"
-            type="submit"
-            >Ingresar</ion-button
-          >
+          <ion-label class="ion-text-center">
+            <p>o Continuar con</p>
+          </ion-label>
+          <ion-icon class="icon-size" name="logo-google"></ion-icon>
+          <ion-icon class="icon-size" name="logo-apple"></ion-icon>
+          <ion-icon class="icon-size" name="logo-facebook"></ion-icon>
+          <ion-label class="ion-text-center">
+            <p>No eres mienbro? </p> <span class="link-title">Registrar</span>
+          </ion-label>
+
+          <ion-label >
+            <p style="margin-top: 100px">CONTINUAR SIN REGISTRAR</p>
+          </ion-label>
         </ion-col>
       </ion-row>
     </ion-grid>
   </form>
+  <!--  <ion-popover trigger="trigger-button">
+    <ng-template>
+      <ion-content class="ion-padding">Hello Styled World!</ion-content>
+    </ng-template>
+  </ion-popover> -->
 </ion-content>
+
+<!-- <ion-button id="trigger-button">Click Me</ion-button> -->

@@ -1,3 +1,42 @@
-ion-button{
-    background-color: #98CA3F;
+
+ion-title h1 {
+  text-align: center;
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 66px;
+  line-height: 88px;
+  color: #121f3d;
+  margin-top: 100px;
+}
+ion-button {
+  --background: #98ca3f;
+  --border-radius: 20px;
+  width: 18rem;
+  text-transform: capitalize;
+  width: 485.91px;
+  height: 74.16px;
+
+  font-weight: 600;
+  font-size: 23.0166px;
+}
+ion-label {
+  font-size: 16px;
+}
+ion-col {
+  text-align: center;
+}
+.icon-size {
+  width: 96px;
+  height: 62px;
+  box-sizing: border-box;
+  left: 71.96px;
+  top: 0px;
+  border: 2.24467px solid #e6e6e6;
+  border-radius: 15.7127px;
+  margin: 0 16px 0 16px;
+}
+.link-title {
+  color: #689EE2;
+
 }
