@@ -33,7 +33,5 @@ export class LoginPage implements OnInit {
 
     );
   }
-  recoverPass() {
-    this.router.navigate(['/recover']);
-    }
+  
 }

@@ -1,4 +1,3 @@
-
 ion-title h1 {
   text-align: center;
   font-family: "Urbanist";
@@ -22,21 +21,22 @@ ion-button {
 }
 ion-label {
   font-size: 16px;
+  a {
+    text-decoration: none;
+  }
 }
 ion-col {
   text-align: center;
 }
 .icon-size {
-  width: 96px;
-  height: 62px;
+  width: 56px;
+  height: 56px;
   box-sizing: border-box;
-  left: 71.96px;
-  top: 0px;
+
   border: 2.24467px solid #e6e6e6;
   border-radius: 15.7127px;
   margin: 0 16px 0 16px;
 }
 .link-title {
-  color: #689EE2;
-
+  color: #689ee2;
 }
